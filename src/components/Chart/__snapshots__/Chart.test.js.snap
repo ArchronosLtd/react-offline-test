@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart component should have the correct id 1`] = `
+<div
+  className="chart"
+>
+  <div
+    className="block"
+  >
+    <div
+      style={
+        Object {
+          "width": "undefined%",
+        }
+      }
+    />
+    <span>
+      test
+       (
+      %)
+    </span>
+  </div>
+  <div
+    className="block"
+  >
+    <div
+      style={
+        Object {
+          "width": "undefined%",
+        }
+      }
+    />
+    <span>
+      test 2
+       (
+      %)
+    </span>
+  </div>
+</div>
+`;

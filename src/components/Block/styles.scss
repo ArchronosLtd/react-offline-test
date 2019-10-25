@@ -1,0 +1,11 @@
+.block {
+    position: relative;
+    > div {
+        border: 1px solid #000;
+        height: 30px;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+}
