@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SVC from './services/energy-usage';
+import UsageService from './services/energy-usage';
 import Chart from './components/Chart/Chart';
 import './app.scss';
 
@@ -8,7 +8,7 @@ const App = () => {
 
     useEffect(() => {
         if (!usage.length) {
-            SVC.get().then((data) => {
+            UsageService.get().then((data) => {
                 setUsage(data.map((data) => {
                     return data.toJSON();
                 }));

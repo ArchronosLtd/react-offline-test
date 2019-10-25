@@ -2,8 +2,10 @@ import { resolve } from "url";
 import Usage, { IUsage, IEntry } from "../models/Usage";
 
 class EnergyUsgaeSvc {
+    // we dont really need a cache, i just added one
     private cache: Array<IEntry> = null;
 
+    // yay for ES6 and promises
     get(): Promise<Array<IEntry>> {
         let response;
 
