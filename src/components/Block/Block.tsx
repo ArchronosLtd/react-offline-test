@@ -7,7 +7,7 @@ type BlockProps = {
 }
 
 // SEE SIMPLE FUNCTION BASED COMPONENTS
-export default ({ data }) => {
+export default ({ data }: BlockProps) => {
     return <div className="block">
         <div style={{ width: `${data.value}%` }}></div>
         <span>{data.label} ({data.value}%)</span>
