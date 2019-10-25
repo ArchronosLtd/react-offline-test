@@ -9,7 +9,10 @@
       "dom",
       "es2017"
     ],
-    "outDir": "./build"
+    "outDir": "./build",
+    "target": "es6"
   },
-  "exclude": ["build"]
+  "exclude": [
+    "build"
+  ]
 }

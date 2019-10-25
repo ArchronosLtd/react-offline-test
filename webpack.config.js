@@ -9,6 +9,7 @@ module.exports = {
     mode: 'development',
     context: path.resolve(__dirname, 'src'),
     target: 'web',
+    devtool: 'inline-source-map',
     entry: {
         app: [
             './index.js'
@@ -21,21 +22,24 @@ module.exports = {
     },
     resolve: {
         mainFields: ['browser', 'module', 'main'],
-        extensions: ['.js', '.json', '.jsx']
+        extensions: ['.js', '.json', '.jsx', '.ts']
     },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
             {
                 test: /\.js(x?)$/,
                 exclude: /node_modules/,
                 use: 'babel-loader',
             },
             {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ]
+                test: /\.(s*)css$/,
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpg|gif)$/,
@@ -47,11 +51,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html',
-        }),
-        new MiniCssExtractPlugin({
-            filename: '[name]-[hash:6].css',
-            chunkFilename: '[id].css',
-            debug: true
         })
     ],
     devServer: {
