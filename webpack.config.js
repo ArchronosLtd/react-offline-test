@@ -22,7 +22,7 @@ module.exports = {
     },
     resolve: {
         mainFields: ['browser', 'module', 'main'],
-        extensions: ['.js', '.json', '.jsx', '.ts']
+        extensions: ['.js', '.json', '.jsx', '.ts', '.tsx']
     },
     module: {
         rules: [

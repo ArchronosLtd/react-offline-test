@@ -3,13 +3,13 @@ export interface IUsage {
     perc: number;
 }
 
-export interface IGraphEntry {
+export interface IEntry {
     id: any;
     value: number;
     label: string;
 }
 
-export default class Usage implements IGraphEntry {
+export default class Usage implements IEntry {
     private _fuel: string;
     private _perc: number;
 
@@ -30,7 +30,7 @@ export default class Usage implements IGraphEntry {
         return this._fuel
     }
 
-    toJSON(): IGraphEntry {
+    toJSON(): IEntry {
         return {
             id: this.id,
             value: this.value,

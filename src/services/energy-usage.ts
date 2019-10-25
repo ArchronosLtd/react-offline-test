@@ -1,10 +1,10 @@
 import { resolve } from "url";
-import Usage, { IUsage, IGraphEntry } from "../models/Usage";
+import Usage, { IUsage, IEntry } from "../models/Usage";
 
 class EnergyUsgaeSvc {
-    private cache: Array<IGraphEntry> = null;
+    private cache: Array<IEntry> = null;
 
-    get(): Promise<Array<IGraphEntry>> {
+    get(): Promise<Array<IEntry>> {
         let response;
 
         if (this.cache) {

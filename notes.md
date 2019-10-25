@@ -11,12 +11,21 @@ I have shipped this with a __snapshot__ of the new Chart wrapper component
 
 # running
 please run the following commands in order
-`npm i`
-`npm test`
-`npm start`
+```
+npm i
+```
+
+```
+npm test
+```
+
+```
+npm start
+```
 
 # things I would change
-I was unaware of the "other" category, or energy production and as such
-would maybe choose to render using tiles or something, but was told not to spend more than about 90mins on this.
+Make it prettier. Good design takes time, and I was told to try not to spend more than 90mins on the task.
 
 Hopefully I've shown enough to at least show I know what I am doing, I genuinely *really* like the sound of Kiwi Power!
+
+Any question please feel free to contact me through the recruiter!

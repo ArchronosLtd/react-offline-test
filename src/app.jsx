@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SVC from './services/energy-usage';
-import Chart from './components/Chart';
+import Chart from './components/Chart/Chart';
 import './app.scss';
 
 const App = () => {
