@@ -7,7 +7,7 @@ set ES6 as target ES version
 Changed the CSS stuff to use SASS to make styling etc easier.
 
 # testing
-I have shipped this with a __snapshot__ of the new Chart wrapper component
+I have shipped this with a __snapshot__ of my components for testing purposes
 
 # running
 please run the following commands in order
